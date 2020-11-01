@@ -1,0 +1,6 @@
+inner join query that selects pizzas from the pizza table via the junction table based on toppings_id
+
+select name, size from pizza
+inner join pizza_toppings
+on pizza.id = pizza_toppings.pizza_id
+where pizza_toppings.toppings_id = 1;
