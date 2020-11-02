@@ -1,0 +1,21 @@
+.img-side{
+	position: relative;
+	float: right;
+	bottom: 240px;
+	margin-top: 40px;
+	margin-right:40px;
+}
+
+
+.controls-side{
+	position: relative;
+	top:20px;
+	display: block;
+	
+}
+
+
+
+select {
+	border-radius: 50px;
+}

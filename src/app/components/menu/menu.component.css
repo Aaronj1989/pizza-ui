@@ -1,0 +1,24 @@
+
+h1{
+position:relative;
+bottom: 220px;
+left:-15;
+color: white;
+font-size: 3.0em;
+}
+
+img{
+	height:230px;
+}
+
+a:link{
+	text-decoration: none;
+    position:relative;
+    height:30px;
+}
+a{
+	display: inline-block;
+	position:relative;
+
+	right: 40px;
+}

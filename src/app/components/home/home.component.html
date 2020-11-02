@@ -1,0 +1,23 @@
+ 
+   <div >
+	<nav> Deals see all deals </nav>
+	 <!-- promotional sits up top and center-->
+	    <!-- deals div with 3 seperate deals -->
+
+		<div class = "mdl-grid ">
+	
+		  <promotion class="mdl-cell mdl-cell--4-col promotion-card" *ngFor ="let promo of promos" [promoObj]= "promo"></promotion> 
+	
+		    </div>
+	
+	<h2 class="menu-title"> menu </h2>
+
+	 <div class="mdl-grid"> <!-- menu div with 4 separate categories -->
+	 <menu  class="mdl-cell mdl-cell--5-col" *ngFor = "let category of categories" [menuCategory]="category" > 
+
+	</menu> 
+              
+		   
+	</div>
+
+</div>

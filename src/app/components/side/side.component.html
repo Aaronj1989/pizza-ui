@@ -1,0 +1,18 @@
+<div> 
+<h2>{{side.name}}</h2>
+<h3 >{{price | currency:'USD':true:'.2'}}</h3>
+
+<select (change)="updateQuantity($event.target.value)">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+<img src ={{sideImg}}>
+<Button class="mdl-button mdl-js-button mdl-color--red-500 mdl-button--raised mdl-color-text--white
+  mdl-cell mdl-cell--12-col"  (click)="addToOrder()" >Add To Order</Button>
+  </div>
+  
+  
+

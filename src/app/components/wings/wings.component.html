@@ -1,0 +1,28 @@
+<div mdl-grid >
+	  <h2>Large Traditional Wings </h2>
+
+	<h3 >{{price | currency:'USD':true:'.2'}}</h3> <br>
+ <form  #myForm ="ngForm" class = "controls-side mdl-grid mdl-cell mdl-cell--6-col" (ngSubmit)="addToOrder(myForm)">
+ 
+ 	<select (change)="onChange($event.target.value)" class= "mdl-cell mdl-cell--12-col" >
+ 		<option>6</option>
+ 		<option>12</option>
+ 		<option>18</option>
+ 	</select >
+
+ 	<select (change)="chooseFlavor($event.target.value)" name = "flavorPick"  class= "mdl-cell mdl-cell--12-col"  [(ngModel)] ="wingsSet.flavor" required>
+ 		<option value ="default" disabled>Choose flavor</option>
+ 		<option value ="Honey BBQ">Honey BBQ</option>
+ 		<option value ="Plain">Plain</option>
+ 		<option value ="Mild">Mild</option>
+ 		<option value ="Hot N Spicy">Hot N Spicy</option>
+ 		<option value ="Teriyaki">Teriyaki</option>
+ 	</select>
+
+
+ <Button class="mdl-button mdl-js-button mdl-color--red-500 mdl-button--raised mdl-color-text--white
+  mdl-cell mdl-cell--12-col"  type ="submit" >Add To Order</Button>
+  </form>
+	 </div>
+	 	<div class="img-side"><img src="{{wingsImg}}"  height="180px" width="300px"></div> 
+       

@@ -1,0 +1,26 @@
+
+<div >
+   <div class="controls-side">
+	<h1>{{drink.name}}</h1>
+	<h3>{{price | currency:'USD':true:'.2'}}</h3>
+
+	<select (change)="onChange($event.target.value)">
+		<option>20 oz</option>
+		<option>1 Liter</option> 
+	</select> <select (change)="updateQuantity($event.target.value)">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+	</select>
+</div>
+	<div class="img-side">
+		<img src="{{drinkImg}}">
+
+	</div>
+	<Button
+		class="mdl-button mdl-js-button mdl-color--red-500 mdl-button--raised mdl-color-text--white
+  mdl-cell mdl-cell--12-col"
+		(click)="addToOrder()">Add To Order</Button>
+</div>

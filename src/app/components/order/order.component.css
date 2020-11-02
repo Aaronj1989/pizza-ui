@@ -1,0 +1,87 @@
+li div {
+	display:inline-table;
+
+     margin-right: 20px;
+}
+
+li {
+	display: inline-block;
+	width: 800px;
+	padding: 25px;
+    border-bottom: 2px solid darkgrey; 
+   
+}
+
+.submit-container{
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+
+.price-section{
+	position: relative;
+	float: right;
+	top:30px;
+    
+}
+
+.item-name-description{
+    
+	position: relative;
+	top: -5px;
+	height:160px;
+
+}
+.img-section{
+	position:relative;
+	top: 40px;
+}
+.item-description{
+
+
+}
+.order-summary{
+	position: relative;
+	top: 100px;
+	padding: 25px;
+	border:1px solid darkgrey;
+	
+	width: 900px;
+	
+}
+.order-page{
+	display: flex;
+	justify-content: center;
+	height:1000px;
+   
+	
+}
+.subtotal-col{
+position:relative;
+right:11px;
+}
+
+.total-summary{
+	border-top:2px solid darkgrey;
+
+	position:relative;
+	float:right;
+	
+}
+Button{
+	margin-right:20px;
+}
+
+.total-cell{
+	position:relative;
+	right: 8px;
+
+}
+.tax-cell{
+	position:relative;
+	right:20px;
+}
+.total-summary h2{
+	text-align: right;
+}

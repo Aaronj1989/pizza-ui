@@ -1,0 +1,13 @@
+div{
+	border: 1px solid darkgrey;
+	width:520px;
+}
+
+img{ 
+	position: relative;
+	left: 220px;
+}
+select{
+	width: 50px;
+	Border-radius:50px;
+}

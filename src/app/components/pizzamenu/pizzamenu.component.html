@@ -1,0 +1,18 @@
+<h1>PIZZA</h1> 
+
+<div class="mdl-grid">
+  <div class ="mdl-cell mdl-cell--5-col pizza-border"  *ngFor= "let pizzaType of pizzaCategories">
+    <pizza  [pizza] ="pizzaType" [pizzas] ="pizzas"></pizza>
+
+	
+
+	</div>
+	<div class="mdl-cell mdl-cell--5-col pizza-border custom-option">
+	  <h2>Create your own </h2>
+	  <Button (click)="createYourOwn()">Create Your Own</Button>
+	  <div class="mdl-cell mdl-cell-4-col img-side "><img  src="/assets/img/pizza menu/create your own pizza.png"></div> 
+	  
+	</div>
+</div>
+
+

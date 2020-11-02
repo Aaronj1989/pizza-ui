@@ -1,0 +1,11 @@
+.drink-div{
+	border: 1px solid lightgrey;
+	width:600px;
+}
+
+div{
+	position: relative;
+    
+	left: 50px;
+	
+}

@@ -1,0 +1,27 @@
+main {
+	position: relative;
+ 	left: 100px; 
+	max-width: 1600px;
+    
+} 
+
+button{
+	position: relative;
+	left: 260px;
+}
+body{
+	
+display:flex;
+justify-content: center;
+
+border: 1px solid red;
+height: 1700px;
+}
+
+.mdl-layout__header-row{
+	background-color: red;
+}
+.order-icon{
+	  position: relative;
+	  right:280px;
+}

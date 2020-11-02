@@ -1,0 +1,35 @@
+div.img-side{
+  float:right;
+ margin-right: 60px;
+ 
+
+}
+
+div.controls-side{
+	float:left;
+	height: 200px;
+	
+	width: 50%;
+
+	
+}
+select{
+	position: relative;
+	border-radius: 50px;
+	font-size: 14px;
+	width: 80%;
+	border-color: lightgray;
+    bottom: -40px;
+}
+
+.mdl-card--border{
+	background-color:red;
+}
+
+button{
+	position: relative;
+	bottom: -50px;
+	width: 80%;
+}
+
+

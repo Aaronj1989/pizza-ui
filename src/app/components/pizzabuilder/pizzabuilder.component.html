@@ -1,0 +1,53 @@
+<h1>Create your own</h1>
+
+<h2>{{price |currency:'CAD':'symbol-narrow'}}</h2>
+<div *ngIf="!showSummary">
+    <Button (click)="constructOrder()">Done!</Button>
+	<button (click)="setPizza('large')">Large</button>
+	<button (click)="setPizza('medium')">Medium</button>
+	<div *ngFor="let topping of toppings">
+		<app-topping *ngIf='toppings' [topping]='topping'
+			(selectTopping)="updatePrice()" [toppingStyles]=toppingStyles></app-topping>
+	</div>
+</div>
+<div>
+	<img src="/assets/img/pizza builder/pbtoppings/pizza base.png"
+		class="base-img"> <img *ngIf="activeTopping('Pepperoni')"
+		src="/assets/img/pizza builder/pbtoppings/Pepperoni topping.png"
+		class="topping-img" [style.clip-path]="getToppingStyle('Pepperoni')">
+
+	<img *ngIf="activeTopping('Italian sausage')"
+		src="/assets/img/pizza builder/pbtoppings/Italian sausage topping.png"
+		class="topping-img"
+		[style.clip-path]="getToppingStyle('Italian sausage')">
+		
+			<img *ngIf="activeTopping('Pineapple')"
+		src="/assets/img/pizza builder/pbtoppings/Pineapple topping.png"
+		class="topping-img"
+		[style.clip-path]="getToppingStyle('Pineapple')">
+		
+			<img *ngIf="activeTopping('Mushrooms')"
+		src="/assets/img/pizza builder/pbtoppings/Mushroom topping.png"
+		class="topping-img"
+		[style.clip-path]="getToppingStyle('Mushrooms')">
+		
+			<img *ngIf="activeTopping('Green Bellpeppers')"
+		src="/assets/img/pizza builder/pbtoppings/Bell pepper topping.png"
+		class="topping-img"
+		[style.clip-path]="getToppingStyle('Green Bellpeppers')">
+		
+			<img *ngIf="activeTopping('Olives')"
+		src="/assets/img/pizza builder/pbtoppings/Olives topping.png"
+		class="topping-img"
+		[style.clip-path]="getToppingStyle('Olives')">
+</div>
+<div *ngIf="showSummary">
+	<Button (click)="addToOrder()">Add to Order</Button>
+	<a (click)="viewSummary(false)" href="javascript:void(0);"> <span>Modify</span>
+		<span class="material-icons forward-icon">keyboard_arrow_right</span>
+	</a>
+	<div >
+		<div [innerHTML]="description" class="summary-item"></div>
+	</div>
+
+</div>

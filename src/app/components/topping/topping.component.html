@@ -1,0 +1,11 @@
+
+<div class="main-div">
+<h1>{{topping.name}}</h1>
+<img id ="topping_img" src="{{topping.img}}"> 
+<div>
+<Button (click)="setToppingStyle('none')">None</Button>
+<a (click)="setToppingStyle('left')"><img src='{{leftActivated}}'></a> 
+<a (click)="setToppingStyle('right')"><img src='{{rightActivated}}'></a> 
+<a (click)="setToppingStyle('whole')"><img src='{{wholeActivated}}'></a></div>
+
+</div>

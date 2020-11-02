@@ -1,0 +1,48 @@
+<div class="order-page">
+
+
+	<div class="order-summary">
+		<h1 class="page-title">My Order</h1>
+
+		<ul>
+			<li *ngFor="let item of items">
+				<div class="img-section">
+					<img src={{item.img}} style="width: 120px; height: 120px;">
+				</div>
+				<div class="item-name-description">
+					<h1 class="item-name">{{item.name}}</h1>
+					<div class="item-description" [innerHtml]="item.description"></div>
+				</div>
+				<div class="price-section">
+					<h2>{{item.totalPrice | currency:'CAD':'symbol-narrow'}}</h2>
+					<button (click)="removeItem(item)">Remove</button>
+					QTY: <select *ngIf="item"
+						(change)="updateItemQuantity($event.target.value,item)"
+						([ngModel])="item.quantity">
+						<option *ngFor="let quantity of quantities" [value]="quantity"
+							[attr.selected]="item.quantity === quantity? true:null">{{quantity}}</option>
+
+					</select>
+
+				</div>
+			</li>
+		</ul>
+		<div class="total-summary mdl-grid">
+           
+			<h2 class="mdl-cell mdl-cell--4-col subtotal-col">Subtotal</h2>
+			<h2 class="mdl-cell mdl-cell--8-col">{{subtotal|
+				currency:'CAD':'symbol-narrow'}}</h2>
+			<h2 class="mdl-cell mdl-cell--3-col tax-cell">Tax</h2>
+			<h2 class="mdl-cell mdl-cell--9-col ">{{tax|
+				currency:'CAD':'symbol-narrow'}}</h2>
+			<h2 class="mdl-cell mdl-cell--3-col total-cell">Total</h2>
+			<h2 class="mdl-cell mdl-cell--9-col">{{total|
+				currency:'CAD':'symbol-narrow'}}</h2>
+			<div class="mdl-cell mdl-cell--12-col submit-container"> 
+			<Button>Place Order</Button></div>
+             
+
+		</div>
+     
+	</div>
+</div>

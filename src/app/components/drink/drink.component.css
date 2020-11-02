@@ -1,0 +1,30 @@
+.img-side{
+	margin-right: auto;
+/* 	border: 1px solid blue;  */
+	position: relative;
+	left: 100px;
+	width:380px;
+	height:100px;
+	margin-bottom: 100px;
+}
+
+.controls-side{
+	
+	float: left;
+/* 	border: 1px solid red; */
+    height: 200px;
+    
+}
+
+select{
+	display:block;
+	width: 100%;
+	margin-bottom:20px;
+}
+
+img{
+	position: relative;
+	
+}
+
+ 

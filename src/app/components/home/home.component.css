@@ -1,0 +1,21 @@
+
+div{
+	margin:auto;
+	width:90%;
+	padding:10px;
+   justify-content: center;
+}
+
+h2 {
+	 /* border-style: solid;
+	border-color: blue; */
+  position: relative;
+  left: 70px;
+
+}
+
+menu {
+position:relative;	
+ margin-right:80px;
+
+}
